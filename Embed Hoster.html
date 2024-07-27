@@ -7,7 +7,6 @@
     <!-- Include Highcharts library -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <style>
-        /* Add some basic styling */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -18,6 +17,7 @@
             width: 80%;
             margin: auto;
             padding: 20px;
+            height: 400px; /* Added height to ensure the chart displays */
         }
     </style>
 </head>
@@ -25,7 +25,27 @@
     <!-- Container for the chart -->
     <div id="container"></div>
     <!-- Include your JavaScript file -->
-    <script src="my-js-literal.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('JavaScript file loaded'); // Check if this message appears in the console
+            Highcharts.chart("container", {
+                series: [{
+                    data: [
+                        ['Apples', 1.8541],
+                        ['Apples, applesauce', 1.1705],
+                        ['Apples, ready-to-drink', 0.8699],
+                        // Add remaining data here
+                    ],
+                    name: 'RetailPrice',
+                    type: 'bar'
+                }],
+                title: {
+                    text: 'Fruit Retail price'
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
 
