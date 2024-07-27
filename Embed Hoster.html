@@ -1,48 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Retail Prices Chart</title>
-    <!-- Include Highcharts library -->
+    <title>Dynamic Highcharts</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        #container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            height: 400px; /* Added height to ensure the chart displays */
-        }
-    </style>
+    <script src="chart-config.js"></script> <!-- This will contain your chart data and configuration -->
 </head>
 <body>
-    <!-- Container for the chart -->
-    <div id="container"></div>
-    <!-- Include your JavaScript file -->
+    <div id="container" style="width:100%; height:400px;"></div>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('JavaScript file loaded'); // Check if this message appears in the console
-            Highcharts.chart("container", {
-                series: [{
-                    data: [
-                        ['Apples', 1.8541],
-                        ['Apples, applesauce', 1.1705],
-                        ['Apples, ready-to-drink', 0.8699],
-                        // Add remaining data here
-                    ],
-                    name: 'RetailPrice',
-                    type: 'bar'
-                }],
-                title: {
-                    text: 'Fruit Retail price'
-                }
-            });
+        document.addEventListener('DOMContentLoaded', function () {
+            Highcharts.chart('container', my-js-literal);
         });
     </script>
 </body>
