@@ -1,6 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    Highcharts.chart("container", {
+    Highcharts.chart('container', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Fruit Retail Price'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Retail Price'
+            }
+        },
         series: [{
+            name: 'Retail Price',
             data: [
                 ['Apples', 1.8541],
                 ['Apples, applesauce', 1.1705],
@@ -64,12 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 ['Strawberries', 2.9682],
                 ['Strawberries', 3.3421],
                 ['Watermelon', 0.382]
-            ],
-            name: 'RetailPrice',
-            type: 'bar'
-        }],
-        title: {
-            text: 'Fruit Retail Price'
-        }
+            ]
+        }]
     });
 });
+
