@@ -127,7 +127,7 @@ Highcharts.chart("chart2",
 ['Watermelon',
 0.382]],
   name: 'RetailPrice',
-  type: 'bar'
+  type: 'line'
 }],
   title: {
   text: 'Fruit Retail price'
