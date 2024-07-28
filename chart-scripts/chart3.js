@@ -29568,22 +29568,22 @@ Highcharts.mapChart('chart3', {
         "min": 0
     },
     "series": [{
-        "data": {
-            "hc-key": [
-                "us-tx-001",
-                "us-tx-003",
-                "us-tx-005",
-                "us-tx-007",
-                "us-tx-009"
-            ],
-            "value": [
-                100,
-                200,
-                300,
-                400,
-                500
-            ]
-        },
+        "data": [{
+            "hc-key": "us-tx-001",
+            "value": 100
+        }, {
+            "hc-key": "us-tx-003",
+            "value": 200
+        }, {
+            "hc-key": "us-tx-005",
+            "value": 300
+        }, {
+            "hc-key": "us-tx-007",
+            "value": 400
+        }, {
+            "hc-key": "us-tx-009",
+            "value": 500
+        }],
         "mapData": {
             "title": "Texas",
             "version": "2.2.0",
