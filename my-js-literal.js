@@ -186,13 +186,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     ],
                     ['Watermelon',
                         0.382
-                    ]
-                ],
+                    ]],
                 name: 'RetailPrice',
                 type: 'bar'
             }],
         title: {
             text: 'Fruit Retail price'
         }
-    }, );
+    },
+);
 });
