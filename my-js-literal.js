@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    Highcharts.chart("chart0", {
+    Highcharts.chart("chart1", {
         series: [{
             data: [
                 ['Apples',
