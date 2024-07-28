@@ -59147,7 +59147,7 @@ Highcharts.mapChart('chart3', {
         },
         "dataLabels": {
             "enabled": false,
-            "format": ""
+            "format": "{point.name}"
         }
     }]
 });
