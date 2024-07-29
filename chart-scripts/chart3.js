@@ -29556,7 +29556,7 @@ Highcharts.mapChart('chart3', {
         }
     },
     "title": {
-        "text": "example"
+        "text": "Texas Map"
     },
     "mapNavigation": {
         "enabled": true,
@@ -59139,7 +59139,7 @@ Highcharts.mapChart('chart3', {
             }]
         },
         "joinBy": "hc-key",
-        "name": "Population",
+        "name": "Texas Map",
         "states": {
             "hover": {
                 "color": "#BADA55"
@@ -59147,7 +59147,7 @@ Highcharts.mapChart('chart3', {
         },
         "dataLabels": {
             "enabled": false,
-            "format": "{point.name}"
+            "format": ""
         }
     }]
 });
