@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "text": "Mood Chart"
         },
         "pane": {
+            "startAngle": -150,
+            "endAngle": 150,
             "background": [{
                 "backgroundColor": "#fff",
                 "borderWidth": 0,
@@ -17,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         "yAxis": {
             "min": 0,
             "max": 100,
-            "tickPositions": [0, 100],
+            "tickPositions": [0, 50.0, 100],
             "labels": {
                 "formatter": "function() { return this.value + '%'; }"
             },
             "plotBands": [{
                 "from": 0,
                 "to": 100,
-                "color": "#55BF3B"
+                "color": "#FF5733"
             }]
         },
         "series": [{
@@ -33,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "dial": {
                 "backgroundColor": "#333",
                 "borderWidth": 0,
-                "radius": "90%",
+                "baseLength": "70%",
+                "radius": "80%",
                 "baseWidth": 5
             },
             "pivot": {
