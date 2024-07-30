@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
             "max": 100,
             "tickPositions": [0, 50.0, 100],
             "labels": {
-                "formatter": "function() { return this.value + '%'; }"
+                "formatter": function() {
+                    return this.value + "%";
+                }
             },
             "plotBands": [{
                 "from": 0,
