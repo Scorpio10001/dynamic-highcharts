@@ -6,32 +6,30 @@ document.addEventListener('DOMContentLoaded', function() {
             "plotBackgroundImage": null,
             "plotBorderWidth": 0,
             "plotShadow": false,
-            "height": "100%"
+            "height": "300px"
         },
         "title": {
             "text": "Mood Chart",
             "style": {
-                "fontSize": "24px"
+                "fontSize": "24px",
+                "fontWeight": "bold",
+                "color": "#333"
             }
         },
         "pane": {
-            "startAngle": -150,
-            "endAngle": 150,
-            "background": [{
-                "backgroundColor": "#DDD",
-                "borderWidth": 0,
-                "outerRadius": "109%",
-                "innerRadius": "107%"
-            }]
+            "startAngle": -90,
+            "endAngle": 90,
+            "background": null,
+            "center": ["50%", "75%"],
+            "size": "110%"
         },
         "yAxis": {
             "min": 0,
             "max": 10,
             "lineWidth": 0,
-            "tickPositions": [0, 25, 50, 75, 100, 125, 150, 175, 200],
-            "minorTickInterval": "auto",
+            "minorTickInterval": 1,
             "minorTickWidth": 1,
-            "minorTickLength": 10,
+            "minorTickLength": 5,
             "minorTickPosition": "inside",
             "minorTickColor": "#666",
             "tickPixelInterval": 30,
@@ -40,17 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
             "tickLength": 10,
             "tickColor": "#666",
             "labels": {
-                "step": 1,
-                "rotation": "auto",
+                "step": 2,
+                "distance": 20,
                 "style": {
-                    "fontSize": "14px"
+                    "fontSize": "14px",
+                    "fontWeight": "bold"
                 }
             },
             "title": {
                 "text": "Mood",
-                "y": 25,
+                "y": -40,
                 "style": {
-                    "fontSize": "16px"
+                    "fontSize": "16px",
+                    "fontWeight": "bold"
                 }
             },
             "plotBands": [{
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 "to": 10,
                 "color": "#55BF3B"
             }, {
-                "from": 4,
-                "to": 6,
+                "from": 3,
+                "to": 7,
                 "color": "#DDDF0D"
             }, {
                 "from": 0,
@@ -71,24 +71,27 @@ document.addEventListener('DOMContentLoaded', function() {
             "name": "Mood",
             "data": [7],
             "tooltip": {
-                "valueSuffix": ""
+                "valueSuffix": " / 10"
             },
             "dataLabels": {
                 "format": "{y}",
                 "borderWidth": 0,
+                "color": "#333",
                 "style": {
-                    "fontSize": "30px"
-                }
+                    "fontSize": "30px",
+                    "fontWeight": "bold"
+                },
+                "y": 30
             },
             "dial": {
-                "radius": "50%",
-                "backgroundColor": "gray",
+                "radius": "80%",
+                "backgroundColor": "#333",
                 "baseWidth": 12,
                 "baseLength": "0%",
                 "rearLength": "0%"
             },
             "pivot": {
-                "backgroundColor": "gray",
+                "backgroundColor": "#333",
                 "radius": 6
             }
         }]
