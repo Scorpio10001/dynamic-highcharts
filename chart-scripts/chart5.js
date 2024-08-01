@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "yAxis": {
             "min": 0,
-            "max": 200,
+            "max": 10,
             "lineWidth": 0,
             "tickPositions": [0, 25, 50, 75, 100, 125, 150, 175, 200],
             "minorTickInterval": "auto",
@@ -54,16 +54,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             "plotBands": [{
-                "from": 0,
-                "to": 100,
+                "from": 7,
+                "to": 10,
                 "color": "#55BF3B"
             }, {
-                "from": 100,
-                "to": 150,
+                "from": 4,
+                "to": 6,
                 "color": "#DDDF0D"
             }, {
-                "from": 150,
-                "to": 200,
+                "from": 0,
+                "to": 3,
                 "color": "#DF5353"
             }]
         },
