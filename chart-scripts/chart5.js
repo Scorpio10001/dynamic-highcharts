@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "series": [{
             "name": "Mood",
-            "data": [99],
+            "data": [7],
             "tooltip": {
                 "valueSuffix": ""
             },
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             "dial": {
-                "radius": "80%",
+                "radius": "50%",
                 "backgroundColor": "gray",
                 "baseWidth": 12,
                 "baseLength": "0%",
