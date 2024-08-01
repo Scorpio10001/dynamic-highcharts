@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         "pane": {
-            "startAngle": -90,
-            "endAngle": 90,
+            "startAngle": -100,
+            "endAngle": 100,
             "background": null,
             "center": ["50%", "75%"],
             "size": "110%"
         },
         "yAxis": {
-            "min": 0,
+            "min": "Mood",
             "max": 10,
             "lineWidth": 0,
             "minorTickInterval": 1,
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             "title": {
-                "text": "Mood",
+                "text": "Mood Chart",
                 "y": -40,
                 "style": {
                     "fontSize": "16px",
@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }]
         },
         "series": [{
-            "name": "Mood",
+            "name": "",
             "data": [7],
             "tooltip": {
-                "valueSuffix": " / 10"
+                "valueSuffix": ""
             },
             "dataLabels": {
                 "format": "{y}",
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "dial": {
                 "radius": "80%",
                 "backgroundColor": "#333",
-                "baseWidth": 12,
+                "baseWidth": 20,
                 "baseLength": "0%",
                 "rearLength": "0%"
             },
