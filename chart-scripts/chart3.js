@@ -29564,9 +29564,6 @@ Highcharts.mapChart('chart3', {
             "verticalAlign": "bottom"
         }
     },
-    "colorAxis": {
-        "min": 0
-    },
     "series": [{
         "data": [{
             "hc-key": "us-tx-001",
