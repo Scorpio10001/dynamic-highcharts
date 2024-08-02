@@ -21296,9 +21296,6 @@ Highcharts.mapChart('chart4', {
             "verticalAlign": "bottom"
         }
     },
-    "colorAxis": {
-        "min": 0
-    },
     "series": [{
         "data": [{
             "hc-key": "us-ca",
