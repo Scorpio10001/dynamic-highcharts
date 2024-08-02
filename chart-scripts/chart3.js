@@ -59142,7 +59142,7 @@ Highcharts.mapChart('chart3', {
         "name": "Texas Map",
         "states": {
             "hover": {
-                "color": "#BADA55"
+                "color": "#FF7F3E"
             }
         },
         "dataLabels": {
