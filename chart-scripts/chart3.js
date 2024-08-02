@@ -29580,6 +29580,12 @@ Highcharts.mapChart('chart3', {
         }, {
             "hc-key": "us-tx-009",
             "value": 500
+        }, {
+            "hc-key": "us-tx-011",
+            "value": 200
+        }, {
+            "hc-key": "us-tx-029",
+            "value": 400
         }],
         "mapData": {
             "title": "Texas",
