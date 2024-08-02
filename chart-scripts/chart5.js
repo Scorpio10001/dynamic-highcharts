@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "height": "300px"
         },
         "title": {
-            "text": "Mood Chart",
+            "text": "",
             "style": {
                 "fontSize": "24px",
                 "fontWeight": "bold",
