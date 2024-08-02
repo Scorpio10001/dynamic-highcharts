@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ]
             ],
             name: 'RetailPrice',
-            color: '#BADA55',
+            color: '#3ABEF9',
             type: 'line'
         }],
         title: {
