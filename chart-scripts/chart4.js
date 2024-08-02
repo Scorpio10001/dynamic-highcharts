@@ -42601,7 +42601,7 @@ Highcharts.mapChart('chart4', {
         },
         "joinBy": "hc-key",
         "name": "USA Map",
-        "color": "#97BE5A",
+        "color": "#FFDE4D",
         "states": {
             "hover": {
                 "color": "#3ABEF9"
