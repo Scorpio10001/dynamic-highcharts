@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "color": "#DDDF0D"
             }, {
                 "from": 0,
-                "to": 7,
+                "to": 3,
                 "color": "#DF5353"
             }]
         },
