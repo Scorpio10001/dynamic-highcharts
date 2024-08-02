@@ -42607,7 +42607,7 @@ Highcharts.mapChart('chart4', {
         "color": "#97BE5A",
         "states": {
             "hover": {
-                "color": "#BADA55"
+                "color": "#3ABEF9"
             }
         },
         "dataLabels": {
