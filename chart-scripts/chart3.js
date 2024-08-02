@@ -59143,7 +59143,7 @@ Highcharts.mapChart('chart3', {
         "color": "#FF7F3E",
         "states": {
             "hover": {
-                "color": "#BADA55"
+                "color": "#3ABEF9"
             }
         },
         "dataLabels": {
