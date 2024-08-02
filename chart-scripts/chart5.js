@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "plotBackgroundImage": null,
             "plotBorderWidth": 0,
             "plotShadow": false,
-            "height": "300px"
+            "height": "200px"
         },
         "title": {
             "text": "Mood Chart",
