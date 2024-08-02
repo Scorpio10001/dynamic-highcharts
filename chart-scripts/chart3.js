@@ -59140,9 +59140,10 @@ Highcharts.mapChart('chart3', {
         },
         "joinBy": "hc-key",
         "name": "Texas Map",
+        "color": "#FF7F3E",
         "states": {
             "hover": {
-                "color": "#FF7F3E"
+                "color": "#BADA55"
             }
         },
         "dataLabels": {
