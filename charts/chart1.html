@@ -4,67 +4,64 @@
 <head>
     <title>Dynamic Highcharts</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/sunburst.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
 </head>
 <body>
-    <div id="container"></div>
+    <div id="container" style="height: 400px; min-width: 310px"></div>
     <script>
     Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
+        series: [{
+            type: 'treemap',
+            layoutAlgorithm: 'squarified',
+            data: [{
+                name: 'Healthy - $ invested',
+                value: 30000,
+                color: '#28a745'
+            }, {
+                name: 'Healthy - % of budget',
+                value: 30,
+                color: '#71db77'
+            }, {
+                name: 'Reacting - $ invested',
+                value: 20000,
+                color: '#ffc107'
+            }, {
+                name: 'Reacting - % of budget',
+                value: 20,
+                color: '#ffec71'
+            }, {
+                name: 'Injured - $ invested',
+                value: 15000,
+                color: '#fd7e14'
+            }, {
+                name: 'Injured - % of budget',
+                value: 15,
+                color: '#fdc071'
+            }, {
+                name: 'Ill - $ invested',
+                value: 10000,
+                color: '#dc3545'
+            }, {
+                name: 'Ill - % of budget',
+                value: 10,
+                color: '#f57171'
+            }]
+        }],
         title: {
             text: 'Organizational Investment'
         },
-        xAxis: {
-            categories: ['Healthy', 'Reacting', 'Injured', 'Ill']
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Amount'
-            },
-            stackLabels: {
-                enabled: true,
-                style: {
-                    fontWeight: 'bold',
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-                }
-            }
-        },
-        legend: {
-            align: 'right',
-            x: -30,
-            verticalAlign: 'top',
-            y: 25,
-            floating: true,
-            backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || 'white',
-            borderColor: '#CCC',
-            borderWidth: 1,
-            shadow: false
-        },
         tooltip: {
-            headerFormat: '<b>{point.x}</b><br/>',
-            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-        },
-        plotOptions: {
-            column: {
-                stacking: 'normal',
-                dataLabels: {
-                    enabled: true
-                }
+            formatter: function () {
+                return '<b>' + this.point.name + '</b>: ' + this.point.value;
             }
-        },
-        series: [{
-            name: '$ invested',
-            data: [30000, 20000, 15000, 10000]
-        }, {
-            name: '% of budget',
-            data: [30, 20, 15, 10]
-        }]
+        }
     });
     </script>
+
 </body>
 </html>
