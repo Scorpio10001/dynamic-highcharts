@@ -4,7 +4,6 @@
 <head>
     <title>Dynamic Highcharts</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -14,53 +13,56 @@
     <script>
     Highcharts.chart('container', {
         chart: {
-            type: 'heatmap',
-            marginTop: 40,
-            marginBottom: 80,
-            plotBorderWidth: 1
+            type: 'column'
         },
         title: {
-            text: 'Sample Chart for Organizational Investment'
+            text: 'Organizational Investment'
         },
         xAxis: {
             categories: ['Healthy', 'Reacting', 'Injured', 'Ill']
         },
         yAxis: {
-            categories: ['$ invested', '% of budget'],
-            title: null
-        },
-        colorAxis: {
             min: 0,
-            minColor: '#FFFFFF',
-            maxColor: Highcharts.getOptions().colors[0]
+            title: {
+                text: 'Amount'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
         },
         legend: {
             align: 'right',
-            layout: 'vertical',
-            margin: 0,
+            x: -30,
             verticalAlign: 'top',
             y: 25,
-            symbolHeight: 280
+            floating: true,
+            backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
         },
         tooltip: {
-            formatter: function () {
-                return '<b>' + this.series.xAxis.categories[this.point.x] + '</b> invested <br><b>' +
-                    this.point.value + '</b> in <br><b>' + this.series.yAxis.categories[this.point.y] + '</b>';
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true
+                }
             }
         },
         series: [{
-            name: 'Investment Overview',
-            borderWidth: 1,
-            data: [
-                [0, 0, 30], [0, 1, 50], 
-                [1, 0, 20], [1, 1, 40], 
-                [2, 0, 15], [2, 1, 35], 
-                [3, 0, 10], [3, 1, 30]
-            ],
-            dataLabels: {
-                enabled: true,
-                color: '#000000'
-            }
+            name: '$ invested',
+            data: [30000, 20000, 15000, 10000]
+        }, {
+            name: '% of budget',
+            data: [30, 20, 15, 10]
         }]
     });
     </script>
