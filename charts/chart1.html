@@ -1,67 +1,115 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dynamic Highcharts</title>
+    <title>Tree Map</title>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/treemap.js"></script>
-    <script src="https://code.highcharts.com/modules/sunburst.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
 </head>
 <body>
-    <div id="container" style="height: 400px; min-width: 310px"></div>
-    <script>
-    Highcharts.chart('container', {
-        series: [{
-            type: 'treemap',
-            layoutAlgorithm: 'squarified',
-            data: [{
-                name: 'Healthy - $ invested',
-                value: 30000,
-                color: '#28a745'
-            }, {
-                name: 'Healthy - % of budget',
-                value: 30,
-                color: '#71db77'
-            }, {
-                name: 'Reacting - $ invested',
-                value: 20000,
-                color: '#ffc107'
-            }, {
-                name: 'Reacting - % of budget',
-                value: 20,
-                color: '#ffec71'
-            }, {
-                name: 'Injured - $ invested',
-                value: 15000,
-                color: '#fd7e14'
-            }, {
-                name: 'Injured - % of budget',
-                value: 15,
-                color: '#fdc071'
-            }, {
-                name: 'Ill - $ invested',
-                value: 10000,
-                color: '#dc3545'
-            }, {
-                name: 'Ill - % of budget',
-                value: 10,
-                color: '#f57171'
-            }]
-        }],
-        title: {
-            text: 'Organizational Investment'
-        },
-        tooltip: {
-            formatter: function () {
-                return '<b>' + this.point.name + '</b>: ' + this.point.value;
-            }
-        }
-    });
-    </script>
+
+<div id="container" style="height: 600px; width: 800px;"></div>
+
+<script>
+Highcharts.chart('container', {
+    series: [{
+        type: 'treemap',
+        layoutAlgorithm: 'squarified',
+        data: [{
+            name: 'Healthy: Project 001',
+            value: 500000,
+            colorValue: 1
+        }, {
+            name: 'Healthy: Project 002',
+            value: 750000,
+            colorValue: 1
+        }, {
+            name: 'Healthy: Project 003',
+            value: 250000,
+            colorValue: 1
+        }, {
+            name: 'Healthy: Project 004',
+            value: 400000,
+            colorValue: 1
+        }, {
+            name: 'Healthy: Project 005',
+            value: 600000,
+            colorValue: 1
+        }, {
+            name: 'Reacting: Project 006',
+            value: 200000,
+            colorValue: 2
+        }, {
+            name: 'Reacting: Project 007',
+            value: 300000,
+            colorValue: 2
+        }, {
+            name: 'Reacting: Project 008',
+            value: 150000,
+            colorValue: 2
+        }, {
+            name: 'Reacting: Project 009',
+            value: 250000,
+            colorValue: 2
+        }, {
+            name: 'Reacting: Project 010',
+            value: 100000,
+            colorValue: 2
+        }, {
+            name: 'Injured: Project 011',
+            value: 50000,
+            colorValue: 3
+        }, {
+            name: 'Injured: Project 012',
+            value: 75000,
+            colorValue: 3
+        }, {
+            name: 'Injured: Project 013',
+            value: 100000,
+            colorValue: 3
+        }, {
+            name: 'Injured: Project 014',
+            value: 80000,
+            colorValue: 3
+        }, {
+            name: 'Injured: Project 015',
+            value: 90000,
+            colorValue: 3
+        }, {
+            name: 'Ill: Project 016',
+            value: 30000,
+            colorValue: 4
+        }, {
+            name: 'Ill: Project 017',
+            value: 25000,
+            colorValue: 4
+        }, {
+            name: 'Ill: Project 018',
+            value: 20000,
+            colorValue: 4
+        }, {
+            name: 'Ill: Project 019',
+            value: 35000,
+            colorValue: 4
+        }, {
+            name: 'Ill: Project 020',
+            value: 40000,
+            colorValue: 4
+        }]
+    }],
+    title: {
+        text: 'Sample Tree Map for Organizational Investment'
+    },
+    colorAxis: {
+        minColor: '#FFFFFF',
+        maxColor: Highcharts.getOptions().colors[0]
+    },
+    tooltip: {
+        headerFormat: '',
+        pointFormat: '<b>{point.name}</b><br>Investment: ${point.value}'
+    }
+});
+</script>
 
 </body>
 </html>
