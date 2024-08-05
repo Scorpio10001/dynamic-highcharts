@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     Highcharts.chart("chart7", {
+        chart: {
+            type: 'treemap'
+        },
         series: [{
             data: [{
                 "name": "Healthy: Project 001",
@@ -81,11 +84,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 "name": "Ill: Project 020",
                 "value": 40000,
                 "color": "#FF0000"
-            }],
-            type: 'treemap'
+            }]
         }],
         title: {
             text: 'Tree Map'
+        },
+        plotOptions: {
+            treemap: {
+                layoutAlgorithm: 'squarified'
+            }
+        },
+        tooltip: {
+            pointFormat: '<b>Tree Map</b><br/>Name: {point.name}<br/>Value: {point.value}<br/>'
         }
     });
 });
