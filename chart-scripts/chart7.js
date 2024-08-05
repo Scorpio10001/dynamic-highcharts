@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         tooltip: {
-            pointFormat: '<div style="margin: 0; padding: 0;">Condition: {point.type}<br>Invested: ${point.num}<br>% of Budget: {point.value}%</div>'
+            pointFormat: '<b>Condition: {point.type}</b><br/>Invested: ${point.num}<br/>% of Budget: {point.value}%<br/>'
         },
         legend: {
             align: 'right',
