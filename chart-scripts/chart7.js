@@ -111,7 +111,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         tooltip: {
-            pointFormat: '<br>Condition: {point.type}<br/>Invested: ${point.num}<br><br/>% of Budget: {point.value}%<br/>'
+            pointFormat: f '<div style="margin: 0; padding: 0;">Condition: {point.type}<br>Invested: ${point.num}<br>% of Budget: {point.value}%</div>' {
+                point.value
+            } % < br / > '
         }
     });
 });
