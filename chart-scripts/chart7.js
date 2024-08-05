@@ -111,9 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         tooltip: {
-            pointFormat: f '<div style="margin: 0; padding: 0;">Condition: {point.type}<br>Invested: ${point.num}<br>% of Budget: {point.value}%</div>' {
-                point.value
-            } % < br / > '
+            pointFormat: '<div style="margin: 0; padding: 0;">Condition: {point.type}<br>Invested: ${point.num}<br>% of Budget: {point.value}%</div>'
+        },
+        legend: {
+            align: 'right',
+            verticalAlign: 'middle',
+            layout: 'vertical',
+            enabled: true
         }
     });
 });
