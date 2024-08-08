@@ -10,24 +10,56 @@ Highcharts.chart('chart8', {
     'series': [{
         'keys': ['from', 'to', 'weight'],
         'data': [
-            ['Transactional', 'TA / Coaching', 5],
+            ['Project Development', 'Planning', 20],
                 
-            ['TA / Coaching', 'Service Provision', 10],
+            ['Project Development', 'Execution', 20],
                 
-            ['Service Provision', 'Partnership', 15],
+            ['Project Development', 'Evaluation', 15],
                 
-            ['Partnership', 'Co-design', 25]
+            ['Planning', 'Research', 10],
+                
+            ['Planning', 'Resource Allocation', 10],
+                
+            ['Planning', 'Risk Assessment', 8],
+                
+            ['Planning', 'Timeline Management', 7],
+                
+            ['Execution', 'Task Management', 12],
+                
+            ['Execution', 'Team Coordination', 12],
+                
+            ['Evaluation', 'Quality Control', 10],
+                
+            ['Evaluation', 'Feedback Collection', 8],
+                
+            ['Evaluation', 'Final Reporting', 6]
         ],
         'nodes': [{
-            'name': 'Transactional'
+            'name': 'Project Development'
         }, {
-            'name': 'TA / Coaching'
+            'name': 'Planning'
         }, {
-            'name': 'Service Provision'
+            'name': 'Execution'
         }, {
-            'name': 'Partnership'
+            'name': 'Evaluation'
         }, {
-            'name': 'Co-design'
+            'name': 'Research'
+        }, {
+            'name': 'Resource Allocation'
+        }, {
+            'name': 'Task Management'
+        }, {
+            'name': 'Quality Control'
+        }, {
+            'name': 'Feedback Collection'
+        }, {
+            'name': 'Final Reporting'
+        }, {
+            'name': 'Team Coordination'
+        }, {
+            'name': 'Risk Assessment'
+        }, {
+            'name': 'Timeline Management'
         }]
     }]
 })
