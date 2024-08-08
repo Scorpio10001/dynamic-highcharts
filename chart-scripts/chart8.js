@@ -2,7 +2,7 @@ Highcharts.chart('chart8', {
     'chart': {
         'type': 'sankey',
         'marginRight': 100,
-        'backgroundColor': '#FFEEAD'
+        'backgroundColor': '#FFFFFF'
     },
     'title': {
         'text': 'Degrees of relationships'
@@ -10,23 +10,15 @@ Highcharts.chart('chart8', {
     'series': [{
         'keys': ['from', 'to', 'weight'],
         'data': [
-            ['Initial Contact', 'Transactional', 15],
+            ['Transactional', 'TA / Coaching', 5],
                 
-            ['Transactional', 'TA / Coaching', 10],
+            ['TA / Coaching', 'Service Provision', 10],
                 
-            ['TA / Coaching', 'Service Provision', 8],
+            ['Service Provision', 'Partnership', 15],
                 
-            ['Service Provision', 'Partnership', 6],
-                
-            ['Partnership', 'Co-design', 4],
-                
-            ['Co-design', 'Strategic Alliance', 2],
-                
-            ['Strategic Alliance', 'Innovation Hub', 1]
+            ['Partnership', 'Co-design', 25]
         ],
         'nodes': [{
-            'name': 'Initial Contact'
-        }, {
             'name': 'Transactional'
         }, {
             'name': 'TA / Coaching'
@@ -36,10 +28,6 @@ Highcharts.chart('chart8', {
             'name': 'Partnership'
         }, {
             'name': 'Co-design'
-        }, {
-            'name': 'Strategic Alliance'
-        }, {
-            'name': 'Innovation Hub'
         }]
     }]
 })
