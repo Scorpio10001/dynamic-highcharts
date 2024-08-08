@@ -2,41 +2,32 @@ Highcharts.chart('chart8', {
     'chart': {
         'type': 'sankey',
         'marginRight': 100,
-        'backgroundColor': '#3ABEF9'
+        'backgroundColor': '#FFEEAD'
     },
     'title': {
-        'text': 'Sankey Chart'
-    },
-    'accessibility': {
-        'point': {
-            'descriptionFormatter': < function Chart_Creator.sankey_chart. < locals > .description_formatter at 0x00000258AE33D8A0 >
-        }
+        'text': 'Degrees of relationships'
     },
     'series': [{
         'keys': ['from', 'to', 'weight'],
         'data': [
-            ['A', 'B', 5],
+            ['Transactional', 'TA/ Coaching', 5],
                 
-            ['A', 'C', 3],
+            ['Transactional', 'Service Provision', 3],
                 
-            ['B', 'D', 2],
+            ['TA/ Coaching', 'Partnership', 2],
                 
-            ['B', 'E', 1],
-                
-            ['C', 'D', 1],
-                
-            ['C', 'E', 1]
+            ['Service Provision', 'Co-design', 1]
         ],
         'nodes': [{
-            'name': 'A'
+            'name': 'Transactional'
         }, {
-            'name': 'B'
+            'name': 'TA/ Coaching'
         }, {
-            'name': 'C'
+            'name': 'Service Provision'
         }, {
-            'name': 'D'
+            'name': 'Partnership'
         }, {
-            'name': 'E'
+            'name': 'Co-design'
         }]
     }]
 })
