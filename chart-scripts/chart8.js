@@ -10,24 +10,36 @@ Highcharts.chart('chart8', {
     'series': [{
         'keys': ['from', 'to', 'weight'],
         'data': [
-            ['Transactional', 'TA/ Coaching', 5],
+            ['Initial Contact', 'Transactional', 15],
                 
-            ['Transactional', 'Service Provision', 3],
+            ['Transactional', 'TA / Coaching', 10],
                 
-            ['TA/ Coaching', 'Partnership', 2],
+            ['TA / Coaching', 'Service Provision', 8],
                 
-            ['Service Provision', 'Co-design', 1]
+            ['Service Provision', 'Partnership', 6],
+                
+            ['Partnership', 'Co-design', 4],
+                
+            ['Co-design', 'Strategic Alliance', 2],
+                
+            ['Strategic Alliance', 'Innovation Hub', 1]
         ],
         'nodes': [{
+            'name': 'Initial Contact'
+        }, {
             'name': 'Transactional'
         }, {
-            'name': 'TA/ Coaching'
+            'name': 'TA / Coaching'
         }, {
             'name': 'Service Provision'
         }, {
             'name': 'Partnership'
         }, {
             'name': 'Co-design'
+        }, {
+            'name': 'Strategic Alliance'
+        }, {
+            'name': 'Innovation Hub'
         }]
     }]
 })
