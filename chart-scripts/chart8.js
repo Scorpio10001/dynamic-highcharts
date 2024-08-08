@@ -9,7 +9,7 @@ Highcharts.chart('chart8', {
     },
     'accessibility': {
         'point': {
-            'descriptionFormatter': < function Chart_Creator.sankey_chart. < locals > . < lambda > at 0x000002CD6B39D940 >
+            'descriptionFormatter': < function Chart_Creator.sankey_chart. < locals > .description_formatter at 0x0000016B9AFBD9E0 >
         }
     },
     'series': [{
