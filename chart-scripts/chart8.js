@@ -7,6 +7,11 @@ Highcharts.chart('chart8', {
     'title': {
         'text': 'Sankey Chart'
     },
+    'accessibility': {
+        'point': {
+            'descriptionFormatter': < function Chart_Creator.sankey_chart. < locals > .description_formatter at 0x00000258AE33D8A0 >
+        }
+    },
     'series': [{
         'keys': ['from', 'to', 'weight'],
         'data': [
