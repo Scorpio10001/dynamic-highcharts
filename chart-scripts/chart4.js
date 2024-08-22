@@ -2,7 +2,7 @@ Highcharts.mapChart('chart4', {
     "chart": {
         "map": {
             "title": "United States of America with Territories",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "type": "FeatureCollection",
             "copyright": "Copyright (c) 2024 Highsoft AS, Based on data from Natural Earth",
             "copyrightShort": "Natural Earth",
@@ -21315,7 +21315,7 @@ Highcharts.mapChart('chart4', {
         }],
         "mapData": {
             "title": "United States of America with Territories",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "type": "FeatureCollection",
             "copyright": "Copyright (c) 2024 Highsoft AS, Based on data from Natural Earth",
             "copyrightShort": "Natural Earth",
