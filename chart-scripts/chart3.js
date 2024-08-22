@@ -2,7 +2,7 @@ Highcharts.mapChart('chart3', {
     "chart": {
         "map": {
             "title": "Texas",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "type": "FeatureCollection",
             "copyright": "Copyright (c) 2024 Highsoft AS, Based on data from The United States Census Bureau",
             "copyrightShort": "USA Census Bureau",
@@ -29589,7 +29589,7 @@ Highcharts.mapChart('chart3', {
         }],
         "mapData": {
             "title": "Texas",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "type": "FeatureCollection",
             "copyright": "Copyright (c) 2024 Highsoft AS, Based on data from The United States Census Bureau",
             "copyrightShort": "USA Census Bureau",
