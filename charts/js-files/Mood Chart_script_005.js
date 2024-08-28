@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "size": "110%"
         },
         "yAxis": {
-            "min": 0,
+            "min": "Mood Chart",
             "max": 10,
             "lineWidth": 0,
             "minorTickInterval": 1,
