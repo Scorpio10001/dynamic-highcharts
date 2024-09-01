@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
             type: 'treemap'
         },
         series: [{
-            "geocoding-data": [{
+            data: [{
                 "type": "Healthy",
                 "num": "50,000",
                 "name": "Q1",
