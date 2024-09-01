@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         "pane": {
-            "startAngle": -90,
-            "endAngle": 90,
+            "startAngle": -150,
+            "endAngle": 150,
             "background": null,
             "center": ["50%", "75%"],
             "size": "110%"
@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 "backgroundColor": "#333",
                 "baseWidth": 12,
                 "baseLength": "0%",
-                "rearLength": "0%"
+                "rearLength": "20%"
             },
             "pivot": {
                 "backgroundColor": "#333",
-                "radius": 6
+                "radius": 8
             }
         }]
     });
