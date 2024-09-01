@@ -36696,7 +36696,7 @@ Highcharts.mapChart('chart006', {
         }
     },
     "series": [{
-        "geocoding-data": [{
+        "data": [{
             "hc-key": "us",
             "value": 331002651
         }, {
