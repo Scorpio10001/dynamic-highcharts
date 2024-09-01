@@ -25375,7 +25375,7 @@ Highcharts.mapChart('chart003', {
         }
     },
     "series": [{
-        "geocoding-data": [{
+        "data": [{
             "hc-key": "us-tx-001",
             "value": 100
         }, {
