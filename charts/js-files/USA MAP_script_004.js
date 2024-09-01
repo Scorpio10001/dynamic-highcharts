@@ -7181,7 +7181,7 @@ Highcharts.mapChart('chart004', {
         }
     },
     "series": [{
-        "geocoding-data": [{
+        "data": [{
             "hc-key": "us-ca",
             "value": 39538223
         }, {
