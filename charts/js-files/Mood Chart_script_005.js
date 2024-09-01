@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "series": [{
             "name": "Mood",
-            "geocoding-data": [7],
+            "data": [7],
             "tooltip": {
                 "valueSuffix": " / 10"
             },
