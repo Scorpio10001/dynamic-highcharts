@@ -9,7 +9,7 @@ Highcharts.chart('chart008', {
     },
     'series': [{
         'keys': ['from', 'to', 'weight'],
-        'geocoding-data': [
+        'data': [
             ['Project Development', 'Planning', 20],
                 
             ['Project Development', 'Execution', 20],
