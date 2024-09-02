@@ -1,0 +1,35 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>My Chart</title>
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+            </head>
+            <body>
+                
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <div id="container"></div>
+            <script>
+                Highcharts.chart('container', {
+                    chart: {
+                        type: 'pie'
+                    },
+                    title: {
+                        text: chartname
+                    },
+                    series: [{
+                        name: 'Percentage',
+                        data: [
+                            { name: 'council district', y: 226 },
+                { name: 'school district', y: 63 },
+
+                        ]
+                    }]
+                });
+            </script>
+            
+            </body>
+            </html>
+            
