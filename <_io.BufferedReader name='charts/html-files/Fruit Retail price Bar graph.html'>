@@ -1,0 +1,13 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Fruit Retail price Bar graph</title>
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="../js-files/Fruit Retail price Bar graph.js" defer></script>
+            </head>
+            <body>
+                <div id="chart001" style="width:100%; height:400px;"></div>
+            </body>
+            </html>
+            
