@@ -3,7 +3,7 @@
             <html>
             <head>
                 <title>Organizational Investment</title>
-                <script src="https://code.highcharts.com/modules/treemap.js.js"></script>
+                <script src="https://code.highcharts.com/modules/treemap.js"></script>
                 <script src="../js-files/Organizational Investment_script.js" defer></script>
             </head>
             <body>
