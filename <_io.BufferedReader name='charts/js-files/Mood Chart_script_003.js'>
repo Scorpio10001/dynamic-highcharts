@@ -1,0 +1,27 @@
+Highcharts.chart('chart003', {
+    "chart": {
+        "type": "gauge"
+    },
+    "pane": {
+        "startAngle": -150,
+        "endAngle": 150
+    },
+    "yAxis": {
+        "min": 0,
+        "max": 10,
+        "title": {
+            "text": "Mood Chart"
+        }
+    },
+    "series": [
+        {
+            "name": "Mood Chart",
+            "data": [
+                7
+            ],
+            "tooltip": {
+                "valueSuffix": " %"
+            }
+        }
+    ]
+});
