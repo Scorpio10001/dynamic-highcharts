@@ -1,4 +1,4 @@
-Highcharts.mapChart('005', {
+Highcharts.mapChart('001', {
     "chart": {
         "map": {
             "type": "Topology",
