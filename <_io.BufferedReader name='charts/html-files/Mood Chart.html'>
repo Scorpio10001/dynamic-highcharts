@@ -4,6 +4,7 @@
             <head>
                 <title>Mood Chart</title>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/highcharts-more.js"></script>
                 <script src="../js-files/Mood Chart_script.js" defer></script>
             </head>
             <body>
