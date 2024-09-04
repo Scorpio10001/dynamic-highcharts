@@ -27,12 +27,12 @@ Highcharts.chart('009', {
             "colorByPoint": true,
             "data": [
                 {
-                    "district": "school_district",
-                    "count": 0
+                    "name": "school_district",
+                    "y": 0
                 },
                 {
-                    "district": "council_district",
-                    "count": 0
+                    "name": "council_district",
+                    "y": 0
                 }
             ]
         }
