@@ -34,7 +34,7 @@ Highcharts.chart('010', {
         "columnrange": {
             "dataLabels": {
                 "enabled": true,
-                "format": "{y}\u00b0C"
+                "format": "{y}'C"
             },
             "color": "#3ABEF9"
         }
