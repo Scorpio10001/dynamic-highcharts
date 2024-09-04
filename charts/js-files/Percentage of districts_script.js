@@ -28,11 +28,11 @@ Highcharts.chart('009', {
             "data": [
                 {
                     "name": "school_district",
-                    "y": 0
+                    "y": 63
                 },
                 {
                     "name": "council_district",
-                    "y": 0
+                    "y": 226
                 }
             ]
         }
