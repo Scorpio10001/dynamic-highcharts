@@ -14,10 +14,16 @@ Highcharts.chart('013', {
                 "format": "<b>{point.name}</b>: {point.percentage:.1f} %"
             },
             "colors": [
-                "#FF5733",
-                "#33FF57",
-                "#3357FF",
-                "#FF33A1"
+                "#1f77b4",
+                "#ff7f0e",
+                "#2ca02c",
+                "#d62728",
+                "#9467bd",
+                "#8c564b",
+                "#e377c2",
+                "#7f7f7f",
+                "#bcbd22",
+                "#17becf"
             ]
         }
     },
