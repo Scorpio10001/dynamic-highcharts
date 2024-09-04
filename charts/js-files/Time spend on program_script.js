@@ -1160,7 +1160,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             name: 'year_difference',
             color: '#3ABEF9',
-            type: 'bar'
+            type: 'line'
         }],
         title: {
             text: 'Time spend on program'
