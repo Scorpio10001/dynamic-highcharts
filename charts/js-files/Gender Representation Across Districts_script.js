@@ -9,46 +9,66 @@ document.addEventListener('DOMContentLoaded', function() {
         series: [{
             data: [
                 ['Urban',
-                    120
-                ],
-                
-                ['Urban',
-                    100
-                ],
-                
-                ['Urban',
-                    30
-                ],
-                
-                ['Urban',
-                    20
-                ],
-                
-                ['Urban',
-                    10
+                    120.0
                 ],
                 
                 ['Rural',
-                    150
-                ],
-                
-                ['Rural',
-                    90
-                ],
-                
-                ['Rural',
-                    25
-                ],
-                
-                ['Rural',
-                    15
-                ],
-                
-                ['Rural',
-                    5
+                    150.0
                 ]
             ],
-            name: 'Number',
+            name: 'Male',
+            color: '#3ABEF9',
+            type: 'bar'
+        }, {
+            data: [
+                ['Urban',
+                    100.0
+                ],
+                
+                ['Rural',
+                    90.0
+                ]
+            ],
+            name: 'Female',
+            color: '#3ABEF9',
+            type: 'bar'
+        }, {
+            data: [
+                ['Urban',
+                    30.0
+                ],
+                
+                ['Rural',
+                    25.0
+                ]
+            ],
+            name: 'Non-binary',
+            color: '#3ABEF9',
+            type: 'bar'
+        }, {
+            data: [
+                ['Urban',
+                    20.0
+                ],
+                
+                ['Rural',
+                    15.0
+                ]
+            ],
+            name: 'Transgender',
+            color: '#3ABEF9',
+            type: 'bar'
+        }, {
+            data: [
+                ['Urban',
+                    10.0
+                ],
+                
+                ['Rural',
+                    5.0
+                ]
+            ],
+            name: 'Other',
             color: '#3ABEF9',
             type: 'bar'
         }],
