@@ -72,7 +72,7 @@ Highcharts.chart('014', {
             ]
         },
         {
-            "name": "'Other'",
+            "name": "Transgender",
             "data": [
                 49,
                 8
