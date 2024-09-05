@@ -1,6 +1,6 @@
 Highcharts.chart('014', {
     "chart": {
-        "type": "bar"
+        "type": "column"
     },
     "title": {
         "text": "Gender Representation Across Districts"
