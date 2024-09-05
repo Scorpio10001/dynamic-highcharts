@@ -7,8 +7,8 @@ Highcharts.chart('015', {
     },
     "xAxis": {
         "categories": [
-            "Urban",
-            "Rural"
+            "council district",
+            "school district"
         ],
         "title": {
             "text": null
@@ -17,7 +17,7 @@ Highcharts.chart('015', {
     "yAxis": {
         "min": 0,
         "title": {
-            "text": "Gender",
+            "text": "Gender count",
             "align": "high"
         },
         "labels": {
@@ -37,38 +37,45 @@ Highcharts.chart('015', {
     },
     "series": [
         {
-            "name": "Male",
+            "name": "Man",
             "data": [
-                120,
-                150
-            ]
-        },
-        {
-            "name": "Female",
-            "data": [
-                100,
-                90
-            ]
-        },
-        {
-            "name": "Non-binary",
-            "data": [
-                30,
-                25
-            ]
-        },
-        {
-            "name": "Transgender",
-            "data": [
-                20,
+                58,
                 15
             ]
         },
         {
-            "name": "Other",
+            "name": "Woman",
             "data": [
-                10,
-                5
+                43,
+                10
+            ]
+        },
+        {
+            "name": "Unknown",
+            "data": [
+                36,
+                22
+            ]
+        },
+        {
+            "name": "Cisgender Man/Male",
+            "data": [
+                1,
+                0
+            ]
+        },
+        {
+            "name": "Cisgender Woman/Female",
+            "data": [
+                13,
+                2
+            ]
+        },
+        {
+            "name": "'Other'",
+            "data": [
+                49,
+                8
             ]
         }
     ],
