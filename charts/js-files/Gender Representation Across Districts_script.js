@@ -17,7 +17,7 @@ Highcharts.chart('014', {
     "yAxis": {
         "min": 0,
         "title": {
-            "text": "Total Population",
+            "text": "Gender",
             "align": "high"
         },
         "labels": {
@@ -28,7 +28,7 @@ Highcharts.chart('014', {
         "bar": {
             "stacking": "normal",
             "dataLabels": {
-                "enabled": true
+                "enabled": false
             }
         }
     },
