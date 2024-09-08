@@ -2,10 +2,9 @@ Highcharts.chart('011', {
     "chart": {
         "type": "columnrange",
         "inverted": true,
-        "scrollablePlotArea": {
-            "minHeight": 400,
-            "scrollPositionX": 1
-        }
+        "zoomType": "x",
+        "panning": true,
+        "panKey": "shift"
     },
     "title": {
         "text": "Time spend on program"
@@ -1489,7 +1488,14 @@ Highcharts.chart('011', {
                     2024
                 ]
             ],
-            "color": "#3ABEF9"
+            "color": "#3ABEF9",
+            "pointWidth": 20
         }
-    ]
+    ],
+    "scrollbar": {
+        "enabled": true
+    },
+    "rangeSelector": {
+        "enabled": false
+    }
 });
