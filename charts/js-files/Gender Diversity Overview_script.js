@@ -34,15 +34,15 @@ Highcharts.chart('013', {
             "data": [
                 {
                     "name": "Unknown",
-                    "y": 2
+                    "y": 47
                 },
                 {
                     "name": "Man",
-                    "y": 57
+                    "y": 131
                 },
                 {
                     "name": "Woman",
-                    "y": 57
+                    "y": 110
                 }
             ]
         }
