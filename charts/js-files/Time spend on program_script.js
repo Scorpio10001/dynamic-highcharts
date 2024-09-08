@@ -304,7 +304,7 @@ Highcharts.chart('011', {
         "title": {
             "text": "Categories"
         },
-        "tickAmount": 1,
+        "tickAmount": 100,
         "scrollbar": {
             "enabled": true
         }
