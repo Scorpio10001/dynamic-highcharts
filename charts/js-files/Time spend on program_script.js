@@ -3,7 +3,7 @@ Highcharts.chart('011', {
         "type": "columnrange",
         "inverted": true,
         "scrollablePlotArea": {
-            "minHeight": 1000
+            "minHeight": 800
         }
     },
     "title": {
@@ -304,11 +304,9 @@ Highcharts.chart('011', {
         "title": {
             "text": "Categories"
         },
-        "labels": {
-            "rotation": -45,
-            "style": {
-                "fontSize": "10px"
-            }
+        "tickAmount": 15,
+        "scrollbar": {
+            "enabled": true
         }
     },
     "yAxis": {
@@ -317,11 +315,6 @@ Highcharts.chart('011', {
         },
         "scrollbar": {
             "enabled": true
-        },
-        "labels": {
-            "style": {
-                "fontSize": "10px"
-            }
         }
     },
     "plotOptions": {
@@ -330,9 +323,7 @@ Highcharts.chart('011', {
                 "enabled": true,
                 "format": "{y}"
             },
-            "color": "#3ABEF9",
-            "pointPadding": 0.2,
-            "groupPadding": 0.1
+            "color": "#3ABEF9"
         }
     },
     "series": [
