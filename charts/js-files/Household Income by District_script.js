@@ -10,8 +10,8 @@ Highcharts.chart('016', {
     },
     "xAxis": {
         "categories": [
-            "school district",
-            "council district"
+            "council district",
+            "school district"
         ],
         "title": {
             "text": "Categories"
