@@ -24,7 +24,7 @@ Highcharts.chart('016', {
     },
     "plotOptions": {
         "boxplot": {
-            "fillColor": "#3ABEF9",
+            "fillColor": "#17becf",
             "lineWidth": 2,
             "medianColor": "#0C5DA5",
             "medianWidth": 3,
