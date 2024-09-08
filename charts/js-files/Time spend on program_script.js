@@ -8,11 +8,11 @@ Highcharts.chart('011', {
     },
     "xAxis": {
         "categories": [
-            "FLO-38046",
-            "FLO-34661",
-            "FLO-52006",
+            "FLO-27982",
+            "FLO-55491",
+            "FLO-91783",
             "FLO-40203",
-            "FLO-95917"
+            "FLO-47946"
         ],
         "title": {
             "text": "Categories"
@@ -37,10 +37,6 @@ Highcharts.chart('011', {
             "name": "Time spend on program",
             "data": [
                 [
-                    2015,
-                    2024
-                ],
-                [
                     2024,
                     2024
                 ],
@@ -49,11 +45,15 @@ Highcharts.chart('011', {
                     2024
                 ],
                 [
+                    2024,
+                    2024
+                ],
+                [
                     2015,
                     2024
                 ],
                 [
-                    2023,
+                    2021,
                     2024
                 ]
             ],
