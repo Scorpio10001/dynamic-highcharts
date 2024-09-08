@@ -39,33 +39,26 @@ Highcharts.chart('015', {
         {
             "name": "Man",
             "data": [
-                26,
-                6
-            ]
-        },
-        {
-            "name": "Woman",
-            "data": [
                 94,
                 37
             ]
         },
         {
-            "name": "Unknown",
+            "name": "Woman",
             "data": [
                 1,
                 0
             ]
         },
         {
-            "name": "Transgender",
+            "name": "Unknown",
             "data": [
-                13,
-                2
+                39,
+                8
             ]
         },
         {
-            "name": "other",
+            "name": "Transgender",
             "data": [
                 92,
                 18
