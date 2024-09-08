@@ -1,7 +1,9 @@
 Highcharts.chart('011', {
     "chart": {
         "type": "columnrange",
-        "inverted": true
+        "inverted": true,
+        "height": 800,
+        "width": 1200
     },
     "title": {
         "text": "Time spend on program"
@@ -300,9 +302,6 @@ Highcharts.chart('011', {
         ],
         "title": {
             "text": "Categories"
-        },
-        "scrollbar": {
-            "enabled": true
         }
     },
     "yAxis": {
