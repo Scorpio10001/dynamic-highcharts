@@ -321,7 +321,7 @@ Highcharts.chart('011', {
             },
             "color": "#3ABEF9",
             "pointWidth": 20,
-            "pointPadding": 0.2
+            "pointPadding": 10
         }
     },
     "series": [
