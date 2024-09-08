@@ -1,4 +1,4 @@
-Highcharts.chart('011', {
+Highcharts.stockChart('011', {
     "chart": {
         "type": "columnrange",
         "inverted": true,
@@ -305,10 +305,7 @@ Highcharts.chart('011', {
             "text": "Categories"
         },
         "min": 0,
-        "max": 4,
-        "events": {
-            "afterSetExtremes": "\n                        function (e) {\n                            var chart = this.chart;\n                            var step = 5;\n                            var totalPoints = chart.series[0].data.length;\n                            var start = Math.floor(e.min);\n                            var end = Math.floor(e.max);\n\n                            if (start < 0) start = 0;\n                            if (end >= totalPoints) end = totalPoints - 1;\n\n                            var newStart = Math.floor(start / step) * step;\n                            var newEnd = Math.min(newStart + step - 1, totalPoints - 1);\n\n                            if (newStart != start || newEnd != end) {\n                                chart.xAxis[0].setExtremes(newStart, newEnd, true, false);\n                            }\n                        }\n                    "
-        }
+        "max": 4
     },
     "yAxis": {
         "title": {
