@@ -43,6 +43,10 @@ Highcharts.chart('013', {
                 {
                     "name": "Woman",
                     "y": 110
+                },
+                {
+                    "name": "Transgender",
+                    "y": 1
                 }
             ]
         }
