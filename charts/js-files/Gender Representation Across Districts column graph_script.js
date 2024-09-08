@@ -39,8 +39,8 @@ Highcharts.chart('014', {
         {
             "name": "Man",
             "data": [
-                35,
-                22
+                94,
+                37
             ]
         },
         {
@@ -53,15 +53,15 @@ Highcharts.chart('014', {
         {
             "name": "Unknown",
             "data": [
-                2,
-                0
+                39,
+                8
             ]
         },
         {
             "name": "Woman",
             "data": [
-                49,
-                8
+                92,
+                18
             ]
         }
     ],
