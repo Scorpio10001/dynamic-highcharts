@@ -1,4 +1,5 @@
-Highcharts.stockChart('011', {
+
+            Highcharts.stockChart('011', {
     "chart": {
         "type": "columnrange",
         "inverted": true,
@@ -1492,3 +1493,4 @@ Highcharts.stockChart('011', {
         "enabled": true
     }
 });
+        
