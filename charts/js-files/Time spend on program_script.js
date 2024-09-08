@@ -2,8 +2,10 @@ Highcharts.chart('011', {
     "chart": {
         "type": "columnrange",
         "inverted": true,
-        "height": 800,
-        "width": 1200
+        "scrollablePlotArea": {
+            "minWidth": 600,
+            "scrollPositionX": 1
+        }
     },
     "title": {
         "text": "Time spend on program"
@@ -302,6 +304,12 @@ Highcharts.chart('011', {
         ],
         "title": {
             "text": "Categories"
+        },
+        "tickWidth": 0,
+        "labels": {
+            "style": {
+                "fontSize": "10px"
+            }
         }
     },
     "yAxis": {
@@ -1481,5 +1489,11 @@ Highcharts.chart('011', {
             ],
             "color": "#3ABEF9"
         }
-    ]
+    ],
+    "legend": {
+        "enabled": false
+    },
+    "scrollbar": {
+        "enabled": true
+    }
 });
