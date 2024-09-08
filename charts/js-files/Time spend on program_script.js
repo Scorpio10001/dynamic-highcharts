@@ -8,11 +8,11 @@ Highcharts.chart('011', {
     },
     "xAxis": {
         "categories": [
-            "FLO-74764",
-            "FLO-48815",
-            "FLO-61050",
-            "FLO-90333",
-            "FLO-83768"
+            "FLO-38046",
+            "FLO-34661",
+            "FLO-52006",
+            "FLO-40203",
+            "FLO-95917"
         ],
         "title": {
             "text": "Categories"
@@ -27,7 +27,7 @@ Highcharts.chart('011', {
         "columnrange": {
             "dataLabels": {
                 "enabled": true,
-                "format": "{y}Y"
+                "format": "{y}"
             },
             "color": "#3ABEF9"
         }
@@ -41,19 +41,19 @@ Highcharts.chart('011', {
                     2024
                 ],
                 [
+                    2024,
+                    2024
+                ],
+                [
+                    2022,
+                    2024
+                ],
+                [
                     2015,
                     2024
                 ],
                 [
                     2023,
-                    2024
-                ],
-                [
-                    2023,
-                    2024
-                ],
-                [
-                    2015,
                     2024
                 ]
             ],
