@@ -303,10 +303,6 @@ Highcharts.chart('011', {
         ],
         "title": {
             "text": "Categories"
-        },
-        "tickAmount": 100,
-        "scrollbar": {
-            "enabled": true
         }
     },
     "yAxis": {
@@ -323,7 +319,9 @@ Highcharts.chart('011', {
                 "enabled": true,
                 "format": "{y}"
             },
-            "color": "#3ABEF9"
+            "color": "#3ABEF9",
+            "pointWidth": 20,
+            "pointPadding": 0.2
         }
     },
     "series": [
