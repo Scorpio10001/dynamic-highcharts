@@ -3,71 +3,71 @@ document.addEventListener('DOMContentLoaded', function() {
         series: [{
             data: [
                 ['FLO-61050',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-90018',
-                    2021
+                    2024
                 ],
                 
                 ['FLO-26279',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-39869',
-                    2021
+                    2024
                 ],
                 
                 ['FLO-17417',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-09650',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-54874',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-77170',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-54754',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-57169',
-                    2016
+                    2024
                 ],
                 
                 ['FLO-93208',
-                    2022
+                    2024
                 ],
                 
                 ['FLO-61076',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-94603',
-                    2021
+                    2024
                 ],
                 
                 ['FLO-33502',
-                    2022
+                    2024
                 ],
                 
                 ['FLO-51560',
-                    2015
+                    2024
                 ],
                 
                 ['FLO-28932',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-00722',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-20315',
@@ -75,15 +75,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-52006',
-                    2022
+                    2024
                 ],
                 
                 ['FLO-95917',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-12069',
-                    2015
+                    2024
                 ],
                 
                 ['FLO-88268',
@@ -95,11 +95,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-41156',
-                    2022
+                    2024
                 ],
                 
                 ['FLO-62935',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-03687',
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-25400',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-60692',
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-30079',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-91574',
@@ -159,15 +159,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-55066',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-70599',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-27816',
-                    2021
+                    2024
                 ],
                 
                 ['FLO-90765',
@@ -179,15 +179,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-15586',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-61124',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-27105',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-32447',
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-04430',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-95114',
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-75677',
-                    2015
+                    2024
                 ],
                 
                 ['FLO-97021',
@@ -247,11 +247,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-69247',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-13436',
-                    2022
+                    2024
                 ],
                 
                 ['FLO-59688',
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-75798',
-                    2021
+                    2024
                 ],
                 
                 ['FLO-47324',
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-71138',
-                    2021
+                    2024
                 ],
                 
                 ['FLO-76527',
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-27913',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-14865',
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-09295',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-80476',
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-02132',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-91783',
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-00798',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-54208',
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-12474',
-                    2020
+                    2024
                 ],
                 
                 ['FLO-74556',
@@ -363,11 +363,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-91197',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-37111',
-                    2021
+                    2024
                 ],
                 
                 ['FLO-23554',
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-96159',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-39257',
@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-29883',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-29712',
@@ -411,11 +411,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 
                 ['FLO-53949',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-35669',
-                    2023
+                    2024
                 ],
                 
                 ['FLO-34661',
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     2024
                 ]
             ],
-            name: 'entry_year',
+            name: 'exit_year',
             color: '#3ABEF9',
             type: 'line'
         }],
