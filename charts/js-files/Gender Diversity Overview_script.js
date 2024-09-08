@@ -34,7 +34,7 @@ Highcharts.chart('013', {
             "data": [
                 {
                     "name": "Unknown",
-                    "y": 15
+                    "y": 47
                 },
                 {
                     "name": "Man",
