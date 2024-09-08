@@ -44,7 +44,7 @@ Highcharts.chart('014', {
             ]
         },
         {
-            "name": "Woman",
+            "name": "Transgender",
             "data": [
                 1,
                 0
@@ -58,7 +58,7 @@ Highcharts.chart('014', {
             ]
         },
         {
-            "name": "Transgender",
+            "name": "Woman",
             "data": [
                 92,
                 18
