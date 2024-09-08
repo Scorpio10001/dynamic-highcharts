@@ -1497,8 +1497,5 @@ Highcharts.chart('011', {
     ],
     "legend": {
         "enabled": false
-    },
-    "scrollbar": {
-        "enabled": true
     }
 });
