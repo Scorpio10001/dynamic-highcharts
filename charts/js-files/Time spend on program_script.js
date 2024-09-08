@@ -3,7 +3,7 @@ Highcharts.chart('011', {
         "type": "columnrange",
         "inverted": true,
         "scrollablePlotArea": {
-            "minWidth": 600,
+            "minWidth": 1200,
             "scrollPositionX": 1
         }
     },
