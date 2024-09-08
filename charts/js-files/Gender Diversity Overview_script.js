@@ -33,24 +33,16 @@ Highcharts.chart('013', {
             "colorByPoint": true,
             "data": [
                 {
-                    "name": "Cisgender Woman/Female",
-                    "y": 53
-                },
-                {
-                    "name": "Cisgender Man/Male",
-                    "y": 73
-                },
-                {
                     "name": "Unknown",
                     "y": 15
                 },
                 {
                     "name": "Man",
-                    "y": 58
+                    "y": 131
                 },
                 {
                     "name": "Woman",
-                    "y": 57
+                    "y": 110
                 }
             ]
         }
