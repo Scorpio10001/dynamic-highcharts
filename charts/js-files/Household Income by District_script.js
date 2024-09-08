@@ -24,14 +24,14 @@ Highcharts.chart('016', {
     },
     "plotOptions": {
         "boxplot": {
-            "fillColor": "#1f77b4",
+            "fillColor": "#2D9CDB",
             "lineWidth": 2,
-            "medianColor": "#0C5DA5",
+            "medianColor": "#FF6F61",
             "medianWidth": 3,
             "stemColor": "#A63400",
             "stemDashStyle": "dot",
             "stemWidth": 1,
-            "whiskerColor": "#3D9200",
+            "whiskerColor": "#2C3E50",
             "whiskerLength": "80%",
             "whiskerWidth": 3
         }
@@ -56,8 +56,29 @@ Highcharts.chart('016', {
                 ]
             ],
             "tooltip": {
-                "headerFormat": "<em>Category {point.key}</em><br/>"
+                "headerFormat": "<em>Category {point.key}</em><br/>",
+                "pointFormat": "Max: {point.high}<br/>Top 25%: {point.q3}<br/>Middle Value: {point.median}<br/>Bottom 25%: {point.q1}<br/>Min: {point.low}"
             }
+        }
+    ],
+    "annotations": [
+        {
+            "labels": [
+                {
+                    "point": {
+                        "x": 0,
+                        "y": 50000
+                    },
+                    "text": "This line shows the middle income level (Median)"
+                },
+                {
+                    "point": {
+                        "x": 1,
+                        "y": 34999
+                    },
+                    "text": "Top 25% of household incomes"
+                }
+            ]
         }
     ]
 });
