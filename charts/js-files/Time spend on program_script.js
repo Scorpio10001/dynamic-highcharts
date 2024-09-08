@@ -3,7 +3,7 @@ Highcharts.chart('011', {
         "type": "columnrange",
         "inverted": true,
         "scrollablePlotArea": {
-            "minWidth": 1200,
+            "minHeight": 400,
             "scrollPositionX": 1
         }
     },
@@ -305,11 +305,8 @@ Highcharts.chart('011', {
         "title": {
             "text": "Categories"
         },
-        "tickWidth": 0,
         "labels": {
-            "style": {
-                "fontSize": "10px"
-            }
+            "overflow": "justify"
         },
         "min": 0,
         "max": 14,
@@ -1494,8 +1491,5 @@ Highcharts.chart('011', {
             ],
             "color": "#3ABEF9"
         }
-    ],
-    "legend": {
-        "enabled": false
-    }
+    ]
 });
