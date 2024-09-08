@@ -2,9 +2,9 @@ Highcharts.chart('011', {
     "chart": {
         "type": "columnrange",
         "inverted": true,
-        "zoomType": "x",
-        "panning": true,
-        "panKey": "shift"
+        "scrollablePlotArea": {
+            "minHeight": 800
+        }
     },
     "title": {
         "text": "Time spend on program"
@@ -303,31 +303,23 @@ Highcharts.chart('011', {
         ],
         "title": {
             "text": "Categories"
-        },
-        "labels": {
-            "overflow": "justify"
-        },
-        "min": 0,
-        "max": 288
+        }
     },
     "yAxis": {
         "title": {
             "text": "Values"
         },
-        "type": "datetime",
-        "dateTimeLabelFormats": {
-            "year": "%Y"
+        "scrollbar": {
+            "enabled": true
         }
     },
     "plotOptions": {
         "columnrange": {
             "dataLabels": {
                 "enabled": true,
-                "format": "{point.low:%Y}-{point.high:%Y}"
+                "format": "{y}"
             },
-            "color": "#3ABEF9",
-            "grouping": false,
-            "pointWidth": 20
+            "color": "#3ABEF9"
         }
     },
     "series": [
@@ -1493,11 +1485,5 @@ Highcharts.chart('011', {
             ],
             "color": "#3ABEF9"
         }
-    ],
-    "scrollbar": {
-        "enabled": true
-    },
-    "rangeSelector": {
-        "enabled": false
-    }
+    ]
 });
