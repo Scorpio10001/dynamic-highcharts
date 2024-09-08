@@ -6,14 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     0.7543859649122807
                 ],
                 
-                ['Transgender',
-                    0.0
-                ],
-                
-                ['Unknown',
-                    1.5
-                ],
-                
                 ['Woman',
                     0.43859649122807015
                 ]
