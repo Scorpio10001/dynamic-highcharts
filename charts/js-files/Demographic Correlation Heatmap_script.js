@@ -9,6 +9,7 @@ Highcharts.chart('021', {
         "categories": [
             "Gender Identity",
             "Family Income",
+            "Age",
             "Race",
             "Ethnicity",
             "district_type",
@@ -25,6 +26,7 @@ Highcharts.chart('021', {
         "categories": [
             "Gender Identity",
             "Family Income",
+            "Age",
             "Race",
             "Ethnicity",
             "district_type",
@@ -57,6 +59,11 @@ Highcharts.chart('021', {
                     "Gender Identity",
                     "Family Income",
                     0.003799858527259868
+                ],
+                [
+                    "Gender Identity",
+                    "Age",
+                    -0.10967604702150202
                 ],
                 [
                     "Gender Identity",
@@ -105,6 +112,11 @@ Highcharts.chart('021', {
                 ],
                 [
                     "Family Income",
+                    "Age",
+                    0.22006196707923295
+                ],
+                [
+                    "Family Income",
                     "Race",
                     -0.11752655450394275
                 ],
@@ -139,6 +151,56 @@ Highcharts.chart('021', {
                     -0.16319997167724876
                 ],
                 [
+                    "Age",
+                    "Gender Identity",
+                    -0.10967604702150202
+                ],
+                [
+                    "Age",
+                    "Family Income",
+                    0.22006196707923295
+                ],
+                [
+                    "Age",
+                    "Age",
+                    1.0
+                ],
+                [
+                    "Age",
+                    "Race",
+                    -0.47864117832548114
+                ],
+                [
+                    "Age",
+                    "Ethnicity",
+                    -0.08450127783176423
+                ],
+                [
+                    "Age",
+                    "district_type",
+                    -0.02138004456313679
+                ],
+                [
+                    "Age",
+                    "City Council District",
+                    0.17404371927571113
+                ],
+                [
+                    "Age",
+                    "School District",
+                    NaN
+                ],
+                [
+                    "Age",
+                    "Days",
+                    -0.40080009730888816
+                ],
+                [
+                    "Age",
+                    "Years",
+                    -0.38298692084452474
+                ],
+                [
                     "Race",
                     "Gender Identity",
                     0.16236419705569777
@@ -147,6 +209,11 @@ Highcharts.chart('021', {
                     "Race",
                     "Family Income",
                     -0.11752655450394275
+                ],
+                [
+                    "Race",
+                    "Age",
+                    -0.47864117832548114
                 ],
                 [
                     "Race",
@@ -195,6 +262,11 @@ Highcharts.chart('021', {
                 ],
                 [
                     "Ethnicity",
+                    "Age",
+                    -0.08450127783176423
+                ],
+                [
+                    "Ethnicity",
                     "Race",
                     0.2905452517272626
                 ],
@@ -237,6 +309,11 @@ Highcharts.chart('021', {
                     "district_type",
                     "Family Income",
                     -0.24943715535798963
+                ],
+                [
+                    "district_type",
+                    "Age",
+                    -0.02138004456313679
                 ],
                 [
                     "district_type",
@@ -285,6 +362,11 @@ Highcharts.chart('021', {
                 ],
                 [
                     "City Council District",
+                    "Age",
+                    0.17404371927571113
+                ],
+                [
+                    "City Council District",
                     "Race",
                     0.044849376660052766
                 ],
@@ -326,6 +408,11 @@ Highcharts.chart('021', {
                 [
                     "School District",
                     "Family Income",
+                    NaN
+                ],
+                [
+                    "School District",
+                    "Age",
                     NaN
                 ],
                 [
@@ -375,6 +462,11 @@ Highcharts.chart('021', {
                 ],
                 [
                     "Days",
+                    "Age",
+                    -0.40080009730888816
+                ],
+                [
+                    "Days",
                     "Race",
                     0.20327768268611504
                 ],
@@ -417,6 +509,11 @@ Highcharts.chart('021', {
                     "Years",
                     "Family Income",
                     -0.16319997167724876
+                ],
+                [
+                    "Years",
+                    "Age",
+                    -0.38298692084452474
                 ],
                 [
                     "Years",
