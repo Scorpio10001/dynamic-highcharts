@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
         series: [{
             data: [
                 ['Man',
-                    0.7543859649122807
+                    1.0175438596491229
                 ],
                 
                 ['Woman',
-                    0.43859649122807015
+                    0.6842105263157895
                 ]
             ],
             name: 'Years',
