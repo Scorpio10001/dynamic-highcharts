@@ -1,341 +1,68 @@
-document.addEventListener('DOMContentLoaded', function() {
-    Highcharts.chart("011", {
-        series: [{
-            data: [
-                [1.0,
-                    -1
-                ],
-                
-                [39.0,
-                    0
-                ],
-                
-                [38.0,
-                    1
-                ],
-                
-                [21.0,
-                    2
-                ],
-                
-                [9.0,
-                    3
-                ],
-                
-                [6.0,
-                    4
-                ],
-                
-                [1.0,
-                    5
-                ],
-                
-                [3.0,
-                    6
-                ],
-                
-                [2.0,
-                    7
-                ],
-                
-                [7.0,
-                    8
-                ],
-                
-                [4.0,
-                    9
-                ],
-                
-                [2.0,
-                    11
-                ],
-                
-                [1.0,
-                    12
-                ],
-                
-                [4.0,
-                    13
-                ],
-                
-                [1.0,
-                    14
-                ],
-                
-                [3.0,
-                    15
-                ],
-                
-                [2.0,
-                    16
-                ],
-                
-                [1.0,
-                    18
-                ],
-                
-                [1.0,
-                    19
-                ],
-                
-                [3.0,
-                    20
-                ],
-                
-                [1.0,
-                    23
-                ],
-                
-                [1.0,
-                    24
-                ],
-                
-                [3.0,
-                    25
-                ],
-                
-                [2.0,
-                    26
-                ],
-                
-                [2.0,
-                    27
-                ],
-                
-                [1.0,
-                    28
-                ],
-                
-                [1.0,
-                    29
-                ],
-                
-                [2.0,
-                    30
-                ],
-                
-                [1.0,
-                    31
-                ],
-                
-                [3.0,
-                    32
-                ],
-                
-                [1.0,
-                    34
-                ],
-                
-                [1.0,
-                    35
-                ],
-                
-                [2.0,
-                    36
-                ],
-                
-                [1.0,
-                    37
-                ],
-                
-                [1.0,
-                    39
-                ],
-                
-                [2.0,
-                    40
-                ],
-                
-                [1.0,
-                    42
-                ],
-                
-                [1.0,
-                    47
-                ],
-                
-                [1.0,
-                    50
-                ],
-                
-                [2.0,
-                    52
-                ],
-                
-                [2.0,
-                    53
-                ],
-                
-                [1.0,
-                    55
-                ],
-                
-                [2.0,
-                    57
-                ],
-                
-                [1.0,
-                    58
-                ],
-                
-                [2.0,
-                    62
-                ],
-                
-                [1.0,
-                    63
-                ],
-                
-                [3.0,
-                    64
-                ],
-                
-                [2.0,
-                    66
-                ],
-                
-                [1.0,
-                    68
-                ],
-                
-                [1.0,
-                    70
-                ],
-                
-                [2.0,
-                    71
-                ],
-                
-                [2.0,
-                    73
-                ],
-                
-                [1.0,
-                    74
-                ],
-                
-                [1.0,
-                    76
-                ],
-                
-                [2.0,
-                    77
-                ],
-                
-                [1.0,
-                    78
-                ],
-                
-                [1.0,
-                    79
-                ],
-                
-                [2.0,
-                    80
-                ],
-                
-                [2.0,
-                    82
-                ],
-                
-                [1.0,
-                    84
-                ],
-                
-                [2.0,
-                    86
-                ],
-                
-                [2.0,
-                    88
-                ],
-                
-                [2.0,
-                    89
-                ],
-                
-                [1.0,
-                    90
-                ],
-                
-                [1.0,
-                    91
-                ],
-                
-                [2.0,
-                    93
-                ],
-                
-                [1.0,
-                    95
-                ],
-                
-                [1.0,
-                    97
-                ],
-                
-                [2.0,
-                    98
-                ],
-                
-                [2.0,
-                    99
-                ],
-                
-                [3.0,
-                    100
-                ],
-                
-                [1.0,
-                    102
-                ],
-                
-                [1.0,
-                    103
-                ],
-                
-                [1.0,
-                    105
-                ],
-                
-                [1.0,
-                    107
-                ],
-                
-                [4.0,
-                    108
-                ],
-                
-                [2.0,
-                    109
-                ],
-                
-                [2.0,
-                    110
-                ],
-                
-                [5.0,
-                    111
-                ],
-                
-                [8.0,
-                    112
-                ],
-                
-                [7.0,
-                    113
-                ],
-                
-                [28.0,
-                    114
+Highcharts.chart('011', {
+    "chart": {
+        "type": "columnrange",
+        "inverted": true,
+        "events": {
+            "load": "\n                        function () {\n                            var chart = this;\n                            var start = 0;\n                            var step = 5;\n                            var totalPoints = chart.series[0].data.length;\n\n                            function updateData() {\n                                var end = Math.min(start + step - 1, totalPoints - 1);\n                                chart.xAxis[0].setExtremes(start, end);\n                                start += step;\n                                if (start >= totalPoints) {\n                                    start = 0; // Restart or handle end of data\n                                }\n                            }\n\n                            // Add a button to control data update\n                            Highcharts.addEvent(Highcharts.DOMElement.create('button', {id: 'updateButton', innerHTML: 'Next'}), 'click', updateData);\n                        }\n                    "
+        }
+    },
+    "title": {
+        "text": "Time spend on program"
+    },
+    "xAxis": {
+        "categories": [
+            "FLO-70995",
+            "FLO-62453",
+            "FLO-08277",
+            "FLO-54243",
+            "FLO-80226"
+        ],
+        "title": {
+            "text": "Categories"
+        },
+        "min": 0,
+        "max": 4
+    },
+    "yAxis": {
+        "title": {
+            "text": "Values"
+        }
+    },
+    "plotOptions": {
+        "columnrange": {
+            "dataLabels": {
+                "enabled": true,
+                "format": "{y}"
+            },
+            "color": "#3ABEF9"
+        }
+    },
+    "series": [
+        {
+            "name": "Time spend on program",
+            "data": [
+                [
+                    2024,
+                    2024
+                ],
+                [
+                    2024,
+                    2024
+                ],
+                [
+                    2019,
+                    2024
+                ],
+                [
+                    2024,
+                    2024
+                ],
+                [
+                    2019,
+                    2024
                 ]
             ],
-            name: 'Months Difference',
-            color: '#3ABEF9',
-            type: 'bar'
-        }],
-        title: {
-            text: 'Time spend on program'
+            "color": "#3ABEF9"
         }
-    }, );
+    ]
 });
