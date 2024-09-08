@@ -1,10 +1,7 @@
 Highcharts.chart('011', {
     "chart": {
         "type": "columnrange",
-        "inverted": true,
-        "events": {
-            "load": "\n                        function () {\n                            var chart = this;\n                            var start = 0;\n                            var step = 5;\n                            var totalPoints = chart.series[0].data.length;\n\n                            function updateData() {\n                                var end = Math.min(start + step - 1, totalPoints - 1);\n                                chart.xAxis[0].setExtremes(start, end);\n                            }\n\n                            // Initial data update\n                            updateData();\n\n                            // Update start and end on zoom or scroll\n                            Highcharts.addEvent(chart, 'redraw', function () {\n                                var extremes = chart.xAxis[0].getExtremes();\n                                start = Math.floor(extremes.min);\n                                end = Math.floor(extremes.max);\n                            });\n                        }\n                    "
-        }
+        "inverted": true
     },
     "title": {
         "text": "Time spend on program"
@@ -305,7 +302,10 @@ Highcharts.chart('011', {
             "text": "Categories"
         },
         "min": 0,
-        "max": 4
+        "max": 4,
+        "events": {
+            "afterSetExtremes": "\n                        function (e) {\n                            var chart = this.chart;\n                            var extremes = e;\n                            var totalPoints = chart.series[0].data.length;\n                            var start = Math.floor(extremes.min);\n                            var end = Math.floor(extremes.max);\n\n                            // Adjust visible range based on zoom\n                            if (start < 0) start = 0;\n                            if (end >= totalPoints) end = totalPoints - 1;\n\n                            var step = 5;\n                            var newStart = Math.floor(start / step) * step;\n                            var newEnd = Math.min(newStart + step - 1, totalPoints - 1);\n\n                            // Set new extremes if out of bounds\n                            if (newStart != start || newEnd != end) {\n                                chart.xAxis[0].setExtremes(newStart, newEnd, true, false);\n                            }\n                        }\n                    "
+        }
     },
     "yAxis": {
         "title": {
