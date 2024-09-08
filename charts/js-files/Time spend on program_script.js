@@ -308,23 +308,26 @@ Highcharts.chart('011', {
             "overflow": "justify"
         },
         "min": 0,
-        "max": 14,
-        "scrollbar": {
-            "enabled": true
-        }
+        "max": 288
     },
     "yAxis": {
         "title": {
             "text": "Values"
+        },
+        "type": "datetime",
+        "dateTimeLabelFormats": {
+            "year": "%Y"
         }
     },
     "plotOptions": {
         "columnrange": {
             "dataLabels": {
                 "enabled": true,
-                "format": "{y}"
+                "format": "{point.low:%Y}-{point.high:%Y}"
             },
-            "color": "#3ABEF9"
+            "color": "#3ABEF9",
+            "grouping": false,
+            "pointWidth": 20
         }
     },
     "series": [
@@ -1488,8 +1491,7 @@ Highcharts.chart('011', {
                     2024
                 ]
             ],
-            "color": "#3ABEF9",
-            "pointWidth": 20
+            "color": "#3ABEF9"
         }
     ],
     "scrollbar": {
