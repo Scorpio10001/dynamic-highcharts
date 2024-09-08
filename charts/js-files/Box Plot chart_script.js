@@ -5,6 +5,9 @@ Highcharts.chart('012', {
     "title": {
         "text": "Box Plot chart"
     },
+    "legend": {
+        "enabled": false
+    },
     "xAxis": {
         "categories": [
             "Group A",
@@ -18,15 +21,21 @@ Highcharts.chart('012', {
     "yAxis": {
         "title": {
             "text": "Values"
-        },
-        "plotLines": [
-            {
-                "color": "red",
-                "dashStyle": "shortdash",
-                "value": 0,
-                "width": 2
-            }
-        ]
+        }
+    },
+    "plotOptions": {
+        "boxplot": {
+            "fillColor": "#3ABEF9",
+            "lineWidth": 2,
+            "medianColor": "#0C5DA5",
+            "medianWidth": 3,
+            "stemColor": "#A63400",
+            "stemDashStyle": "dot",
+            "stemWidth": 1,
+            "whiskerColor": "#3D9200",
+            "whiskerLength": "80%",
+            "whiskerWidth": 3
+        }
     },
     "series": [
         {
@@ -54,10 +63,8 @@ Highcharts.chart('012', {
                     12
                 ]
             ],
-            "color": "#3ABEF9",
             "tooltip": {
-                "headerFormat": "<em>Category {point.key}</em><br/>",
-                "pointFormat": "Median: {point.median}<br/>Upper quartile: {point.q3}<br/>Lower quartile: {point.q1}<br/>Maximum: {point.high}<br/>Minimum: {point.low}"
+                "headerFormat": "<em>Category {point.key}</em><br/>"
             }
         }
     ]
