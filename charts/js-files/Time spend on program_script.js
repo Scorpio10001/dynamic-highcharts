@@ -1,11 +1,7 @@
-
-            Highcharts.stockChart('011', {
+Highcharts.chart('011', {
     "chart": {
         "type": "columnrange",
-        "inverted": true,
-        "events": {
-            "load": "\n                        function () {\n                            var chart = this;\n                            var step = 5;\n                            var totalPoints = chart.series[0].data.length;\n                            var extremes = chart.xAxis[0].getExtremes();\n\n                            function updateData() {\n                                var start = Math.floor(extremes.min);\n                                var end = Math.min(start + step - 1, totalPoints - 1);\n                                chart.xAxis[0].setExtremes(start, end);\n                            }\n\n                            updateData();\n\n                            Highcharts.addEvent(chart, 'redraw', function () {\n                                extremes = chart.xAxis[0].getExtremes();\n                                var start = Math.floor(extremes.min);\n                                var end = Math.floor(extremes.max);\n                                var newStart = Math.floor(start / step) * step;\n                                var newEnd = Math.min(newStart + step - 1, totalPoints - 1);\n\n                                if (newStart != start || newEnd != end) {\n                                    chart.xAxis[0].setExtremes(newStart, newEnd, true, false);\n                                }\n                            });\n                        }\n                    "
-        }
+        "inverted": true
     },
     "title": {
         "text": "Time spend on program"
@@ -305,8 +301,9 @@
         "title": {
             "text": "Categories"
         },
-        "min": 0,
-        "max": 4
+        "scrollbar": {
+            "enabled": true
+        }
     },
     "yAxis": {
         "title": {
@@ -1485,12 +1482,5 @@
             ],
             "color": "#3ABEF9"
         }
-    ],
-    "scrollbar": {
-        "enabled": true
-    },
-    "navigator": {
-        "enabled": true
-    }
+    ]
 });
-        
