@@ -56,6 +56,24 @@ Highcharts.chart('011', {
             "color": "#3ABEF9",
             "type": "area",
             "fillOpacity": 0.6
+        },
+        {
+            "name": "exit_count",
+            "data": [
+                NaN,
+                NaN,
+                NaN,
+                NaN,
+                NaN,
+                NaN,
+                NaN,
+                NaN,
+                1.0,
+                288.0
+            ],
+            "color": "#F39C12",
+            "type": "area",
+            "fillOpacity": 0.6
         }
     ]
 });
