@@ -310,6 +310,11 @@ Highcharts.chart('011', {
             "style": {
                 "fontSize": "10px"
             }
+        },
+        "min": 0,
+        "max": 14,
+        "scrollbar": {
+            "enabled": true
         }
     },
     "yAxis": {
