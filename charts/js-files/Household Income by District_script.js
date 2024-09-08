@@ -60,25 +60,5 @@ Highcharts.chart('016', {
                 "pointFormat": "Max: {point.high}<br/>Top 25%: {point.q3}<br/>Middle Value: {point.median}<br/>Bottom 25%: {point.q1}<br/>Min: {point.low}"
             }
         }
-    ],
-    "annotations": [
-        {
-            "labels": [
-                {
-                    "point": {
-                        "x": 0,
-                        "y": 50000
-                    },
-                    "text": "This line shows the middle income level (Median)"
-                },
-                {
-                    "point": {
-                        "x": 1,
-                        "y": 34999
-                    },
-                    "text": "Top 25% of household incomes"
-                }
-            ]
-        }
     ]
 });
