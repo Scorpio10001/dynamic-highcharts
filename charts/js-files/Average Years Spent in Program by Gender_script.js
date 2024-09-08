@@ -1,21 +1,59 @@
-document.addEventListener('DOMContentLoaded', function() {
-    Highcharts.chart("019", {
-        series: [{
-            data: [
-                ['Man',
-                    0.7543859649122807
-                ],
-                
-                ['Woman',
-                    0.43859649122807015
-                ]
-            ],
-            name: 'Years',
-            color: '#3ABEF9',
-            type: 'column'
-        }],
-        title: {
-            text: 'Average Years Spent in Program by Gender'
+Highcharts.chart('019', {
+    "chart": {
+        "type": "column"
+    },
+    "title": {
+        "text": "Average Years Spent in Program by Gender"
+    },
+    "xAxis": {
+        "categories": [
+            "Man",
+            "Woman"
+        ],
+        "title": {
+            "text": null
         }
-    }, );
+    },
+    "yAxis": {
+        "min": 0,
+        "title": {
+            "text": "Years",
+            "align": "high"
+        },
+        "labels": {
+            "overflow": "justify"
+        }
+    },
+    "plotOptions": {
+        "bar": {
+            "stacking": "normal",
+            "dataLabels": {
+                "enabled": false
+            }
+        }
+    },
+    "legend": {
+        "reversed": true
+    },
+    "series": [
+        {
+            "name": "Years",
+            "data": [
+                0.7543859649122807,
+                0.43859649122807015
+            ]
+        }
+    ],
+    "colors": [
+        "#1f77b4",
+        "#ff7f0e",
+        "#2ca02c",
+        "#d62728",
+        "#9467bd",
+        "#8c564b",
+        "#e377c2",
+        "#7f7f7f",
+        "#bcbd22",
+        "#17becf"
+    ]
 });
