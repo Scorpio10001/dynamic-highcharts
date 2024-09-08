@@ -37,14 +37,14 @@ Highcharts.chart('019', {
     },
     "series": [
         {
-            "name": "Man",
+            "name": "Woman",
             "data": [
                 0.0,
                 3.5090909090909093
             ]
         },
         {
-            "name": "Woman",
+            "name": "Man",
             "data": [
                 4.366412213740458,
                 0.0
