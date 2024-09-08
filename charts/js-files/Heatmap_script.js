@@ -21,98 +21,98 @@ Highcharts.chart('019', {
         "title": {
             "text": "Values"
         },
-        "labels": {
-            "format": "{value}"
-        }
+        "categories": [
+            "Value1",
+            "Value2",
+            "Value3"
+        ],
+        "reversed": true
     },
     "colorAxis": {
         "minColor": "#FFFFFF",
         "maxColor": "#7cb5ec"
     },
-    "tooltip": {
-        "formatter": "function() { return '<b>' + this.series.name + '</b><br/>' + this.point.x + ', ' + this.point.y + ': ' + this.point.value; }"
-    },
     "series": [
         {
-            "name": "Value1",
+            "name": "Data",
             "data": [
                 [
-                    "A",
+                    0,
+                    0,
                     10
                 ],
                 [
-                    "B",
+                    0,
+                    1,
+                    20
+                ],
+                [
+                    0,
+                    2,
+                    30
+                ],
+                [
+                    1,
+                    0,
                     15
                 ],
                 [
-                    "C",
-                    20
-                ],
-                [
-                    "D",
+                    1,
+                    1,
                     25
                 ],
                 [
-                    "E",
-                    30
-                ]
-            ],
-            "type": "heatmap",
-            "color": "#7cb5ec"
-        },
-        {
-            "name": "Value2",
-            "data": [
+                    1,
+                    2,
+                    35
+                ],
                 [
-                    "A",
+                    2,
+                    0,
                     20
                 ],
                 [
-                    "B",
+                    2,
+                    1,
+                    30
+                ],
+                [
+                    2,
+                    2,
+                    40
+                ],
+                [
+                    3,
+                    0,
                     25
                 ],
                 [
-                    "C",
-                    30
-                ],
-                [
-                    "D",
+                    3,
+                    1,
                     35
                 ],
                 [
-                    "E",
-                    40
-                ]
-            ],
-            "type": "heatmap",
-            "color": "#7cb5ec"
-        },
-        {
-            "name": "Value3",
-            "data": [
-                [
-                    "A",
-                    30
-                ],
-                [
-                    "B",
-                    35
-                ],
-                [
-                    "C",
-                    40
-                ],
-                [
-                    "D",
+                    3,
+                    2,
                     45
                 ],
                 [
-                    "E",
+                    4,
+                    0,
+                    30
+                ],
+                [
+                    4,
+                    1,
+                    40
+                ],
+                [
+                    4,
+                    2,
                     50
                 ]
             ],
-            "type": "heatmap",
-            "color": "#7cb5ec"
+            "type": "heatmap"
         }
     ]
 });
