@@ -1,7 +1,10 @@
 Highcharts.chart('011', {
     "chart": {
         "type": "columnrange",
-        "inverted": true
+        "inverted": true,
+        "events": {
+            "load": "\n                        function () {\n                            var chart = this;\n                            var start = 0;\n                            var step = 5;\n                            var totalPoints = chart.series[0].data.length;\n\n                            function updateData() {\n                                var end = Math.min(start + step - 1, totalPoints - 1);\n                                chart.xAxis[0].setExtremes(start, end);\n                            }\n\n                            // Initial data update\n                            updateData();\n\n                            // Update start and end on zoom or scroll\n                            Highcharts.addEvent(chart, 'redraw', function () {\n                                var extremes = chart.xAxis[0].getExtremes();\n                                start = Math.floor(extremes.min);\n                                end = Math.floor(extremes.max);\n                            });\n                        }\n                    "
+        }
     },
     "title": {
         "text": "Time spend on program"
@@ -300,7 +303,9 @@ Highcharts.chart('011', {
         ],
         "title": {
             "text": "Categories"
-        }
+        },
+        "min": 0,
+        "max": 4
     },
     "yAxis": {
         "title": {
@@ -1480,13 +1485,10 @@ Highcharts.chart('011', {
             "color": "#3ABEF9"
         }
     ],
-    "navigator": {
-        "enabled": true
-    },
     "scrollbar": {
         "enabled": true
     },
-    "rangeSelector": {
+    "navigator": {
         "enabled": true
     }
 });
